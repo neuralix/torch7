@@ -1,6 +1,90 @@
 <a name="torch.Tensor.dok"></a>
 # Tensor #
 
+__Tensor constructors__
+torch.Tensor
+
+Cloning
+clone
+contiguous
+type
+typeAs
+isTensor
+byte(), char(), short(), int(), long(), float(), double()
+
+__Querying the size and structure__
+nDimension
+dim
+size
+stride
+isContiguous
+isSize
+isSameSizeAs
+nElement
+storageOffset
+
+__Referencing a tensor to an existing tensor or chunk of memory__
+set
+isSetTo
+
+__Copying and initializing__
+copy
+fill
+zero
+
+__Resizing__
+resizeAs
+resize
+
+__Extracting sub-tensors__
+narrow
+sub
+select
+[{ dim1,dim2,... }]
+index
+indexCopy
+indexAdd
+indexFill
+gather
+scatter
+maskedSelect
+maskedCopy
+maskedFill
+
+__Search__
+nonzero
+
+__Expanding/Replicating/Squeezing Tensors__
+expand
+expandAs
+repeatTensor
+squeeze
+
+__Manipulating the tensor view__
+view
+viewAs
+transpose
+t
+permute
+unfold
+
+__Applying a function to a tensor__
+apply
+map
+map2
+
+__Dividing a tensor into a table of tensors__
+split
+chunk
+
+__LuaJIT FFI access__
+data
+cdata
+
+__Reference counting__
+retain
+free
+
 The `Tensor` class is probably the most important class in
 `Torch`. Almost every package depends on this class. It is *__the__*
 class for handling numeric data. As with   pretty much anything in
