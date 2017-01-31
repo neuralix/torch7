@@ -9,10 +9,15 @@ torch.Tensor
 __Cloning__
 
 clone
+
 contiguous
+
 type
+
 typeAs
+
 isTensor
+
 byte(), char(), short(), int(), long(), float(), double()
 
 __Querying the size and structure__
