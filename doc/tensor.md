@@ -5,17 +5,17 @@
 
   * torch.Tensor
 
-__Cloning__
+ * Cloning
 
-clone
+  * clone
 
-contiguous
+  * contiguous
 
-type
+  * type
 
-typeAs
+  * typeAs
 
-isTensor
+  * isTensor
 
 byte(), char(), short(), int(), long(), float(), double()
 
