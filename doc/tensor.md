@@ -1,9 +1,8 @@
 <a name="torch.Tensor.dok"></a>
 # Tensor #
 
-__Tensor constructors__
-
-          * torch.Tensor
+ * Tensor constructors
+   * torch.Tensor
 
 __Cloning__
 
