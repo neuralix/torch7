@@ -2,7 +2,8 @@
 # Tensor #
 
  * Tensor constructors
-   * torch.Tensor
+
+  * torch.Tensor
 
 __Cloning__
 
