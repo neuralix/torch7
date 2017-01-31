@@ -8,101 +8,94 @@
  * Cloning
 
   * clone
-
   * contiguous
-
   * type
-
   * typeAs
-
   * isTensor
+  * byte(), char(), short(), int(), long(), float(), double()
 
-byte(), char(), short(), int(), long(), float(), double()
+ * Querying the size and structure
+  * nDimension
+  * dim
+  * size
+  * stride
+  * isContiguous
+  * isSize
+  * isSameSizeAs
+  * nElement
+  * storageOffset
 
-__Querying the size and structure__
+ * Referencing a tensor to an existing tensor or chunk of memory
 
-nDimension
-dim
-size
-stride
-isContiguous
-isSize
-isSameSizeAs
-nElement
-storageOffset
+  * set
+  * isSetTo
 
-__Referencing a tensor to an existing tensor or chunk of memory__
+ * Copying and initializing
 
-set
-isSetTo
+  * copy
+  * fill
+  * zero
 
-__Copying and initializing__
+ * Resizing
 
-copy
-fill
-zero
+  * resizeAs
+  * resize
 
-__Resizing__
+ * Extracting sub-tensors
 
-resizeAs
-resize
+  * narrow
+  * sub
+  * select
+  * [{ dim1,dim2,... }]
+  * index
+  * indexCopy
+  * indexAdd
+  * indexFill
+  * gather
+  * scatter
+  * maskedSelect
+  * maskedCopy
+  * maskedFill
 
-__Extracting sub-tensors__
+ * Search
 
-narrow
-sub
-select
-[{ dim1,dim2,... }]
-index
-indexCopy
-indexAdd
-indexFill
-gather
-scatter
-maskedSelect
-maskedCopy
-maskedFill
+  * nonzero
 
-__Search__
+ * Expanding/Replicating/Squeezing Tensors
 
-nonzero
+  * expand
+  * expandAs
+  * repeatTensor
+  * squeeze
 
-__Expanding/Replicating/Squeezing Tensors__
+ * Manipulating the tensor view
 
-expand
-expandAs
-repeatTensor
-squeeze
+  * view
+  * viewAs
+  * transpose
+  * t
+  * permute
+  * unfold
 
-__Manipulating the tensor view__
+ * Applying a function to a tensor
 
-view
-viewAs
-transpose
-t
-permute
-unfold
+  * apply
+  * map
+  * map2
 
-__Applying a function to a tensor__
+ * Dividing a tensor into a table of tensors
 
-apply
-map
-map2
+  * split
+  * chunk
 
-__Dividing a tensor into a table of tensors__
+ * LuaJIT FFI access
 
-split
-chunk
+  * data
+  * cdata
 
-__LuaJIT FFI access__
-
-data
-cdata
-
-__Reference counting__
-
-retain
-free
+* Reference counting__
+  * retain
+  * free
 
 The `Tensor` class is probably the most important class in
 `Torch`. Almost every package depends on this class. It is *__the__*
