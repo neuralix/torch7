@@ -2,9 +2,10 @@
 # Tensor #
 
 __Tensor constructors__
+
 torch.Tensor
 
-Cloning
+__Cloning__
 clone
 contiguous
 type
@@ -13,6 +14,7 @@ isTensor
 byte(), char(), short(), int(), long(), float(), double()
 
 __Querying the size and structure__
+
 nDimension
 dim
 size
@@ -24,19 +26,23 @@ nElement
 storageOffset
 
 __Referencing a tensor to an existing tensor or chunk of memory__
+
 set
 isSetTo
 
 __Copying and initializing__
+
 copy
 fill
 zero
 
 __Resizing__
+
 resizeAs
 resize
 
 __Extracting sub-tensors__
+
 narrow
 sub
 select
@@ -52,15 +58,18 @@ maskedCopy
 maskedFill
 
 __Search__
+
 nonzero
 
 __Expanding/Replicating/Squeezing Tensors__
+
 expand
 expandAs
 repeatTensor
 squeeze
 
 __Manipulating the tensor view__
+
 view
 viewAs
 transpose
@@ -69,19 +78,23 @@ permute
 unfold
 
 __Applying a function to a tensor__
+
 apply
 map
 map2
 
 __Dividing a tensor into a table of tensors__
+
 split
 chunk
 
 __LuaJIT FFI access__
+
 data
 cdata
 
 __Reference counting__
+
 retain
 free
 
