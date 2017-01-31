@@ -93,7 +93,8 @@
   * data
   * cdata
 
-* Reference counting__
+* Reference counting
+
   * retain
   * free
 
