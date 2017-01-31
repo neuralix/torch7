@@ -1,102 +1,76 @@
 <a name="torch.Tensor.dok"></a>
 # Tensor #
 
- * Tensor constructors
-
-  * torch.Tensor
-
- * Cloning
-
-  * clone
-  * contiguous
-  * type
-  * typeAs
-  * isTensor
-  * byte(), char(), short(), int(), long(), float(), double()
-
- * Querying the size and structure
-  * nDimension
-  * dim
-  * size
-  * stride
-  * isContiguous
-  * isSize
-  * isSameSizeAs
-  * nElement
-  * storageOffset
-
- * Referencing a tensor to an existing tensor or chunk of memory
-
-  * set
-  * isSetTo
-
- * Copying and initializing
-
-  * copy
-  * fill
-  * zero
-
- * Resizing
-
-  * resizeAs
-  * resize
-
- * Extracting sub-tensors
-
-  * narrow
-  * sub
-  * select
-  * [{ dim1,dim2,... }]
-  * index
-  * indexCopy
-  * indexAdd
-  * indexFill
-  * gather
-  * scatter
-  * maskedSelect
-  * maskedCopy
-  * maskedFill
-
- * Search
-
-  * nonzero
-
- * Expanding/Replicating/Squeezing Tensors
-
-  * expand
-  * expandAs
-  * repeatTensor
-  * squeeze
-
- * Manipulating the tensor view
-
-  * view
-  * viewAs
-  * transpose
-  * t
-  * permute
-  * unfold
-
- * Applying a function to a tensor
-
-  * apply
-  * map
-  * map2
-
- * Dividing a tensor into a table of tensors
-
-  * split
-  * chunk
-
- * LuaJIT FFI access
-
-  * data
-  * cdata
-
-* Reference counting
-
-  * retain
-  * free
+ * Tensor constructors:
+  * torch.Tensor:
+ * Cloning:
+  * clone:
+  * contiguous:
+  * type:
+  * typeAs:
+  * isTensor:
+  * byte(), char(), short(), int(), long(), float(), double():
+ * Querying the size and structure:
+  * nDimension:
+  * dim:
+  * size:
+  * stride:
+  * isContiguous:
+  * isSize:
+  * isSameSizeAs:
+  * nElement:
+  * storageOffset:
+ * Referencing a tensor to an existing tensor or chunk of memory:
+  * set:
+  * isSetTo:
+ * Copying and initializing:
+  * copy:
+  * fill:
+  * zero:
+ * Resizing:
+  * resizeAs:
+  * resize:
+ * Extracting sub-tensors:
+  * narrow:
+  * sub:
+  * select:
+  * [{ dim1,dim2,... }]:
+  * index:
+  * indexCopy:
+  * indexAdd:
+  * indexFill:
+  * gather:
+  * scatter:
+  * maskedSelect:
+  * maskedCopy:
+  * maskedFill:
+ * Search:
+  * nonzero:
+ * Expanding/Replicating/Squeezing Tensors:
+  * expand:
+  * expandAs:
+  * repeatTensor:
+  * squeeze:
+ * Manipulating the tensor view:
+  * view:
+  * viewAs:
+  * transpose:
+  * t:
+  * permute:
+  * unfold:
+ * Applying a function to a tensor:
+  * apply:
+  * map:
+  * map2:
+ * Dividing a tensor into a table of tensors:
+  * split:
+  * chunk:
+ * LuaJIT FFI access:
+  * data:
+  * cdata:
+* Reference counting:
+  * retain:
+  * free:
 
 The `Tensor` class is probably the most important class in
 `Torch`. Almost every package depends on this class. It is *__the__*
